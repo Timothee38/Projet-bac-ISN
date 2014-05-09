@@ -1,10 +1,10 @@
 import random
-nombreColis = random.randint(1,50)
+nombreColis = random.randint(2,50)
 fichierColis = open("fichier-colis1.txt", 'w')
 fichierColis.write(str(random.randint(100,1000)))
 fichierColis.write("\n")
 for i in range(nombreColis):
-    fichierColis.write(str(random.randint(1,100)))
+    fichierColis.write(str(i+1))
     fichierColis.write(" ")
     fichierColis.write(str(random.randint(1,100)))
     fichierColis.write(" ")
